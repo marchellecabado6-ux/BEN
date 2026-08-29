@@ -9,16 +9,10 @@
 
 <style>
 
-/* =========================
-   FONTS
-========================= */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap');
 
-
-/* =========================
-   RESET
-========================= */
 
 * {
     margin: 0;
@@ -56,9 +50,7 @@ body {
 }
 
 
-/* =========================
-   OPENING SCREEN
-========================= */
+
 
 #opening {
     position: fixed;
@@ -121,9 +113,7 @@ body {
 }
 
 
-/* =========================
-   ANGEL HEART
-========================= */
+
 
 .angel-heart {
     position: relative;
@@ -168,7 +158,6 @@ body {
 }
 
 
-/* WINGS */
 
 .wing {
     position: absolute;
@@ -262,9 +251,7 @@ body {
 }
 
 
-/* =========================
-   MAIN
-========================= */
+
 
 #main {
     opacity: 0;
@@ -282,9 +269,7 @@ body {
 }
 
 
-/* =========================
-   HERO
-========================= */
+
 
 .hero {
     min-height: 100vh;
@@ -361,10 +346,6 @@ body {
 }
 
 
-/* =========================
-   PHOTO SECTION
-========================= */
-
 .photos-section {
     min-height: 100vh;
 
@@ -393,10 +374,6 @@ body {
 }
 
 
-/* =========================
-   THREE PHOTO AREA
-========================= */
-
 .photo-area {
     position: relative;
 
@@ -405,12 +382,6 @@ body {
     height: 570px;
 
     perspective: 1600px;
-}
-
-
-/* =========================
-   PHOTO CARD
-========================= */
 
 .photo-card {
     position: absolute;
@@ -462,10 +433,6 @@ body {
 }
 
 
-/* =========================
-   PHOTO 1
-========================= */
-
 .photo-one {
 
     left: 9%;
@@ -481,11 +448,6 @@ body {
 
     z-index: 2;
 }
-
-
-/* =========================
-   PHOTO 2
-========================= */
 
 .photo-two {
 
@@ -507,11 +469,6 @@ body {
     z-index: 4;
 }
 
-
-/* =========================
-   PHOTO 3
-========================= */
-
 .photo-three {
 
     right: 9%;
@@ -530,11 +487,6 @@ body {
     z-index: 2;
 }
 
-
-/* =========================
-   PHOTO HOVER
-========================= */
-
 .photo-card:hover {
 
     z-index: 20;
@@ -549,9 +501,6 @@ body {
         0 55px 110px rgba(0,0,0,.65),
         0 0 70px rgba(255,150,180,.35);
 }
-
-
-/* LITTLE HEART ON PHOTO */
 
 .photo-card::after {
 
@@ -641,10 +590,6 @@ body {
     color: #ffe0e7;
 }
 
-
-/* =========================
-   CHOICE POPUP
-========================= */
 
 #choices {
 
@@ -841,10 +786,6 @@ body {
 }
 
 
-/* =========================
-   MODAL
-========================= */
-
 .modal {
 
     position: fixed;
@@ -983,10 +924,6 @@ body {
 }
 
 
-/* =========================
-   MUSIC
-========================= */
-
 .music-section {
 
     min-height: 90vh;
@@ -1104,11 +1041,6 @@ body {
     cursor: pointer;
 }
 
-
-/* =========================
-   LYRICS AREA
-========================= */
-
 .lyrics {
 
     max-width: 600px;
@@ -1172,11 +1104,6 @@ body {
     }
 
 }
-
-
-/* =========================
-   FINAL
-========================= */
 
 .final {
 
@@ -1247,12 +1174,6 @@ body {
 
     color: #ffb5c8;
 }
-
-
-/* =========================
-   FLOATING PARTICLES
-========================= */
-
 .particle {
 
     position: fixed;
@@ -1295,11 +1216,6 @@ body {
     }
 
 }
-
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 750px) {
 
@@ -1411,11 +1327,6 @@ body {
 
 <body>
 
-
-<!-- =====================================================
-     OPENING
-===================================================== -->
-
 <div id="opening">
 
     <div class="opening-content">
@@ -1442,7 +1353,7 @@ body {
 
 
         <div class="open-title">
-            For My Adi
+            for my adi
         </div>
 
 
@@ -1459,11 +1370,6 @@ body {
 
 </div>
 
-
-
-<!-- =====================================================
-     MAIN
-===================================================== -->
 
 <div id="main">
 
@@ -1489,21 +1395,13 @@ body {
 
         <div class="hero-description">
 
-            Some people become memories.
-
-            Some become stories.
-
-            And some become a part of your heart.
+         You were someone I never expected to meet,
+yet somehow, you became someone I never want to lose.
 
         </div>
 
     </section>
 
-
-
-    <!-- =================================================
-         THREE PHOTOS
-    ================================================== -->
 
     <section class="photos-section">
 
@@ -1546,9 +1444,6 @@ body {
             </div>
 
 
-
-            <!-- PHOTO 3 -->
-
             <div
                 class="photo-card photo-three"
                 id="photoThree"
@@ -1572,10 +1467,6 @@ body {
     </section>
 
 
-
-    <!-- =================================================
-         MUSIC
-    ================================================== -->
 
     <section class="music-section">
 
@@ -1627,10 +1518,7 @@ body {
             </div>
 
 
-            <!--
-                Use lyrics only if you have permission
-                to publish them.
-            -->
+      
 
             <div class="lyric active">
                 ♡ Our song begins here...
@@ -1656,11 +1544,6 @@ body {
     </section>
 
 
-
-    <!-- =================================================
-         FINAL
-    ================================================== -->
-
     <section class="final">
 
         <div class="final-wing">
@@ -1675,12 +1558,9 @@ body {
 
         <p>
 
-            Thank you for every little moment,
-            every laugh, every conversation,
-            and every memory.
-
-            If I could choose again,
-            I would still choose you.
+          Thank you for always being there,
+for making me laugh, and for making my days
+so much better just by being you.
 
         </p>
 
@@ -1695,9 +1575,6 @@ body {
 
 
 
-<!-- =====================================================
-     THREE CHOICES
-===================================================== -->
 
 <div id="choices">
 
@@ -1717,8 +1594,7 @@ body {
         <div class="choice-grid">
 
 
-            <!-- LETTER -->
-
+          
             <div
                 class="choice"
                 id="letterChoice"
@@ -1740,7 +1616,7 @@ body {
 
 
 
-            <!-- SONG -->
+        
 
             <div
                 class="choice"
@@ -1801,10 +1677,6 @@ body {
 
 
 
-<!-- =====================================================
-     LETTER MODAL
-===================================================== -->
-
 <div
     class="modal"
     id="letterModal"
@@ -1835,24 +1707,21 @@ body {
 
 
         <p>
-            Thank you for every smile,
-            every laugh, every conversation,
-            and every little moment that became
-            a beautiful memory.
-        </p>
+           i just wanna say how genuinely thankful i am for you, like, super. 🥹
 
+thank you for always being there for me, for listening to all my random kwentos, for making me laugh, and for somehow knowing how to make my bad days a little less bad.
 
-        <p>
-            You make ordinary days feel special,
-            and somehow you became one of the people
-            I never want to lose.
-        </p>
+honestly, hindi ko talaga in-expect na you’d become this important to me. like, excuse me??? paano ka naging favorite person ko??? 😭
 
+i’m so grateful for all the little moments we have together, kahit minsan super random lang, wala naman tayong ginagawa, or nag-aaway tayo over the most nonsense things ever. 😭 but somehow, i still wouldn’t trade those moments for anything.
 
-        <p>
-            If I had the chance to choose again,
-            among all the people in this world,
-            I would still choose you.
+and yes, minsan you’re annoying. actually, most of the time. charot. 😭 but you’re also one of the best things that happened to me, and i hope you know how much i appreciate having you in my life.
+
+so thank you, love, for being you and for loving me kahit ang arte ko minsan. 🤭
+
+i’m really, really grateful that out of all the people in this world, i somehow got you.
+
+and honestly? i wouldn’t have it any other way. 
         </p>
 
 
@@ -1880,11 +1749,6 @@ body {
 </div>
 
 
-
-<!-- =====================================================
-     SONG MODAL
-===================================================== -->
-
 <div
     class="modal"
     id="songModal"
@@ -1911,7 +1775,7 @@ body {
             This song is for the moments,
             the memories,
             and the person who makes
-            them meaningful.
+           my life meaningful.
         </p>
 
 
@@ -1934,11 +1798,6 @@ body {
 
 </div>
 
-
-
-<!-- =====================================================
-     LOVE MODAL
-===================================================== -->
 
 <div
     class="modal"
@@ -1963,22 +1822,14 @@ body {
 
 
         <p>
-            If love had a place,
-            I think mine would be
-            wherever you are.
-        </p>
+           if i could make one promise,
+it would be to always treasure what we have—
+every memory, every laugh, every little moment,
+and even the random, chaotic ones. 😭
 
-
-        <p>
-            If I could keep one moment forever,
-            it would be one where I'm with you.
-        </p>
-
-
-        <p>
-            And if I could make one promise,
-            it would be to always treasure
-            the memories we've made.
+because at the end of the day,
+i’m just really grateful that i get to experience all of this with you.
+and honestly, i wouldn’t want it any other way
         </p>
 
 
@@ -2041,9 +1892,6 @@ const musicCircle =
     document.getElementById("musicCircle");
 
 
-/* =========================
-   OPENING
-========================= */
 
 openHeart.addEventListener("click", () => {
 
