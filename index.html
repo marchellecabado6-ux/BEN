@@ -1,15 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>For My Adi ♡</title>
+<title>for my adi ♡</title>
 
 <style>
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap');
 
@@ -20,13 +17,11 @@
     box-sizing: border-box;
 }
 
+
 body {
     min-height: 100vh;
-
     font-family: "Montserrat", sans-serif;
-
     color: white;
-
     overflow-x: hidden;
 
     background:
@@ -50,19 +45,17 @@ body {
 }
 
 
-
+/* =========================
+   OPENING
+========================= */
 
 #opening {
     position: fixed;
-
     inset: 0;
-
     z-index: 9999;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -80,52 +73,39 @@ body {
         visibility 1.3s ease;
 }
 
+
 #opening.hide {
     opacity: 0;
-
     visibility: hidden;
-
     pointer-events: none;
 }
 
 
 .opening-content {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
 }
 
 
 .small-text {
     font-size: 9px;
-
     letter-spacing: 5px;
-
     text-transform: uppercase;
-
     color: #ffe2e9;
-
     opacity: .7;
-
     margin-bottom: 25px;
 }
-
-
 
 
 .angel-heart {
     position: relative;
 
     width: 260px;
-
     height: 200px;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     cursor: pointer;
@@ -137,11 +117,9 @@ body {
 
 .heart {
     position: relative;
-
     z-index: 5;
 
     font-size: 110px;
-
     color: white;
 
     text-shadow:
@@ -158,12 +136,10 @@ body {
 }
 
 
-
 .wing {
     position: absolute;
 
     width: 125px;
-
     height: 80px;
 
     background:
@@ -205,7 +181,6 @@ body {
         serif;
 
     font-size: 48px;
-
     font-style: italic;
 }
 
@@ -218,7 +193,6 @@ body {
         serif;
 
     font-size: 18px;
-
     font-style: italic;
 
     letter-spacing: 2px;
@@ -231,7 +205,6 @@ body {
     margin-top: 15px;
 
     font-size: 8px;
-
     letter-spacing: 4px;
 
     opacity: .5;
@@ -251,11 +224,12 @@ body {
 }
 
 
-
+/* =========================
+   MAIN
+========================= */
 
 #main {
     opacity: 0;
-
     visibility: hidden;
 
     transition: opacity 2s ease;
@@ -264,22 +238,21 @@ body {
 
 #main.show {
     opacity: 1;
-
     visibility: visible;
 }
 
 
-
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: 100vh;
 
     display: flex;
-
     flex-direction: column;
 
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -290,7 +263,6 @@ body {
 
 .hero-small {
     font-size: 9px;
-
     letter-spacing: 6px;
 
     color: #ffc2d1;
@@ -308,7 +280,6 @@ body {
         clamp(70px, 15vw, 135px);
 
     font-weight: 400;
-
     font-style: italic;
 }
 
@@ -326,7 +297,6 @@ body {
         serif;
 
     font-size: 20px;
-
     font-style: italic;
 
     color: #ffd1dc;
@@ -338,23 +308,24 @@ body {
 
     margin-top: 30px;
 
-    font-size: 12px;
-
+    font-size: 13px;
     line-height: 2;
 
-    opacity: .65;
+    opacity: .7;
 }
 
+
+/* =========================
+   PHOTOS
+========================= */
 
 .photos-section {
     min-height: 100vh;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 80px 15px;
@@ -365,7 +336,6 @@ body {
 
 .section-label {
     font-size: 9px;
-
     letter-spacing: 5px;
 
     color: #ffc3d2;
@@ -378,16 +348,16 @@ body {
     position: relative;
 
     width: min(1000px, 96vw);
-
     height: 570px;
 
     perspective: 1600px;
+}
+
 
 .photo-card {
     position: absolute;
 
     width: 280px;
-
     height: 390px;
 
     padding: 7px;
@@ -422,7 +392,6 @@ body {
 
 .photo-card img {
     width: 100%;
-
     height: 100%;
 
     display: block;
@@ -434,9 +403,7 @@ body {
 
 
 .photo-one {
-
     left: 9%;
-
     top: 95px;
 
     transform:
@@ -449,10 +416,9 @@ body {
     z-index: 2;
 }
 
+
 .photo-two {
-
     left: 50%;
-
     top: 30px;
 
     margin-left: -140px;
@@ -469,10 +435,9 @@ body {
     z-index: 4;
 }
 
+
 .photo-three {
-
     right: 9%;
-
     top: 95px;
 
     transform:
@@ -487,8 +452,8 @@ body {
     z-index: 2;
 }
 
-.photo-card:hover {
 
+.photo-card:hover {
     z-index: 20;
 
     transform:
@@ -502,24 +467,20 @@ body {
         0 0 70px rgba(255,150,180,.35);
 }
 
-.photo-card::after {
 
+.photo-card::after {
     content: "♡";
 
     position: absolute;
 
     right: 17px;
-
     bottom: 17px;
 
     width: 43px;
-
     height: 43px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     border-radius: 50%;
@@ -576,7 +537,6 @@ body {
 
 
 .photo-instruction {
-
     margin-top: 10px;
 
     font-family:
@@ -584,17 +544,18 @@ body {
         serif;
 
     font-size: 25px;
-
     font-style: italic;
 
     color: #ffe0e7;
 }
 
 
+/* =========================
+   CHOICES
+========================= */
+
 #choices {
-
     position: fixed;
-
     inset: 0;
 
     z-index: 5000;
@@ -602,7 +563,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 20px;
@@ -614,7 +574,6 @@ body {
         blur(18px);
 
     opacity: 0;
-
     visibility: hidden;
 
     pointer-events: none;
@@ -624,9 +583,7 @@ body {
 
 
 #choices.show {
-
     opacity: 1;
-
     visibility: visible;
 
     pointer-events: auto;
@@ -634,7 +591,6 @@ body {
 
 
 .choices-inner {
-
     width: min(900px, 95vw);
 
     text-align: center;
@@ -642,7 +598,6 @@ body {
 
 
 .choices-inner h2 {
-
     font-family:
         "Cormorant Garamond",
         serif;
@@ -650,17 +605,14 @@ body {
     font-size: 55px;
 
     font-style: italic;
-
     font-weight: 400;
 }
 
 
 .choices-inner > p {
-
     margin-top: 5px;
 
     font-size: 8px;
-
     letter-spacing: 4px;
 
     opacity: .5;
@@ -668,7 +620,6 @@ body {
 
 
 .choice-grid {
-
     display: grid;
 
     grid-template-columns:
@@ -681,15 +632,12 @@ body {
 
 
 .choice {
-
     min-height: 190px;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 20px;
@@ -717,7 +665,6 @@ body {
 
 
 .choice:hover {
-
     transform:
         translateY(-13px)
         scale(1.05);
@@ -732,7 +679,6 @@ body {
 
 
 .choice-icon {
-
     font-size: 40px;
 
     margin-bottom: 12px;
@@ -740,7 +686,6 @@ body {
 
 
 .choice h3 {
-
     font-family:
         "Cormorant Garamond",
         serif;
@@ -748,17 +693,14 @@ body {
     font-size: 30px;
 
     font-style: italic;
-
     font-weight: 400;
 }
 
 
 .choice p {
-
     margin-top: 7px;
 
     font-size: 8px;
-
     letter-spacing: 1px;
 
     opacity: .5;
@@ -766,7 +708,6 @@ body {
 
 
 .close-choice {
-
     margin-top: 28px;
 
     padding: 11px 25px;
@@ -786,10 +727,12 @@ body {
 }
 
 
+/* =========================
+   MODALS
+========================= */
+
 .modal {
-
     position: fixed;
-
     inset: 0;
 
     z-index: 6000;
@@ -797,7 +740,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 20px;
@@ -809,7 +751,6 @@ body {
         blur(18px);
 
     opacity: 0;
-
     visibility: hidden;
 
     pointer-events: none;
@@ -819,9 +760,7 @@ body {
 
 
 .modal.show {
-
     opacity: 1;
-
     visibility: visible;
 
     pointer-events: auto;
@@ -829,7 +768,6 @@ body {
 
 
 .modal-box {
-
     width: min(650px, 94vw);
 
     max-height: 85vh;
@@ -859,13 +797,11 @@ body {
 
 
 .modal-icon {
-
     font-size: 50px;
 }
 
 
 .modal-date {
-
     margin-top: 10px;
 
     font-family:
@@ -879,7 +815,6 @@ body {
 
 
 .modal-box h2 {
-
     margin: 10px 0 25px;
 
     font-family:
@@ -889,13 +824,11 @@ body {
     font-size: 52px;
 
     font-style: italic;
-
     font-weight: 400;
 }
 
 
 .modal-box p {
-
     margin-bottom: 18px;
 
     font-size: 13px;
@@ -907,7 +840,6 @@ body {
 
 
 .close-modal {
-
     margin-top: 15px;
 
     padding: 11px 27px;
@@ -924,16 +856,17 @@ body {
 }
 
 
-.music-section {
+/* =========================
+   MUSIC
+========================= */
 
+.music-section {
     min-height: 90vh;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
@@ -943,15 +876,11 @@ body {
 
 
 .music-circle {
-
     width: 105px;
-
     height: 105px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     border-radius: 50%;
@@ -968,11 +897,12 @@ body {
     box-shadow:
         0 0 35px
         rgba(255,130,160,.25);
+
+    transition: .4s ease;
 }
 
 
 .music-circle.playing {
-
     animation:
         musicGlow 2s infinite;
 }
@@ -996,7 +926,6 @@ body {
 
 
 .music-title {
-
     margin-top: 25px;
 
     font-family:
@@ -1004,17 +933,14 @@ body {
         serif;
 
     font-size: 35px;
-
     font-style: italic;
 }
 
 
 .music-subtitle {
-
     margin-top: 5px;
 
     font-size: 9px;
-
     letter-spacing: 3px;
 
     color: #ffc3d0;
@@ -1022,7 +948,6 @@ body {
 
 
 .music-button {
-
     margin-top: 25px;
 
     padding: 13px 30px;
@@ -1039,10 +964,20 @@ body {
     color: white;
 
     cursor: pointer;
+
+    transition: .3s ease;
 }
 
-.lyrics {
 
+.music-button:hover {
+    background:
+        rgba(255,130,160,.2);
+
+    transform: translateY(-2px);
+}
+
+
+.lyrics {
     max-width: 600px;
 
     margin-top: 50px;
@@ -1050,9 +985,7 @@ body {
 
 
 .lyrics-label {
-
     font-size: 8px;
-
     letter-spacing: 5px;
 
     color: #ffb8ca;
@@ -1062,7 +995,6 @@ body {
 
 
 .lyric {
-
     display: none;
 
     font-family:
@@ -1070,7 +1002,6 @@ body {
         serif;
 
     font-size: 25px;
-
     font-style: italic;
 
     line-height: 1.6;
@@ -1105,16 +1036,18 @@ body {
 
 }
 
-.final {
 
+/* =========================
+   FINAL
+========================= */
+
+.final {
     min-height: 75vh;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     padding: 80px 20px;
@@ -1124,7 +1057,6 @@ body {
 
 
 .final-wing {
-
     font-size: 60px;
 
     margin-bottom: 15px;
@@ -1132,7 +1064,6 @@ body {
 
 
 .final h2 {
-
     font-family:
         "Cormorant Garamond",
         serif;
@@ -1141,13 +1072,11 @@ body {
         clamp(65px, 12vw, 110px);
 
     font-weight: 400;
-
     font-style: italic;
 }
 
 
 .final p {
-
     max-width: 500px;
 
     margin-top: 25px;
@@ -1161,7 +1090,6 @@ body {
 
 
 .final-signature {
-
     margin-top: 35px;
 
     font-family:
@@ -1169,13 +1097,17 @@ body {
         serif;
 
     font-size: 35px;
-
     font-style: italic;
 
     color: #ffb5c8;
 }
-.particle {
 
+
+/* =========================
+   FLOATING PARTICLES
+========================= */
+
+.particle {
     position: fixed;
 
     bottom: -30px;
@@ -1217,6 +1149,11 @@ body {
 
 }
 
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 750px) {
 
     .open-title {
@@ -1224,32 +1161,36 @@ body {
     }
 
 
+    .hero h1 {
+        font-size: 75px;
+    }
+
+
+    .hero-description {
+        max-width: 330px;
+        font-size: 11px;
+    }
+
+
     .photo-area {
-
         width: 95vw;
-
         height: 650px;
     }
 
 
     .photo-card {
-
         width: 190px;
-
         height: 270px;
     }
 
 
     .photo-one {
-
         left: 0;
-
         top: 180px;
     }
 
 
     .photo-two {
-
         left: 50%;
 
         margin-left: -95px;
@@ -1259,64 +1200,70 @@ body {
 
 
     .photo-three {
-
         right: 0;
-
         top: 180px;
     }
 
 
+    .photo-card:hover {
+        transform:
+            translateY(-15px)
+            scale(1.04)
+            rotateY(0)
+            rotateZ(0);
+    }
+
+
     .choice-grid {
-
         grid-template-columns: 1fr;
-
         gap: 12px;
     }
 
 
     .choice {
-
         min-height: 115px;
-
         padding: 15px;
     }
 
 
     .choice-icon {
-
         font-size: 28px;
-
         margin-bottom: 4px;
     }
 
 
     .choice h3 {
-
         font-size: 25px;
     }
 
 
     .choices-inner h2 {
-
         font-size: 40px;
     }
 
 
     .modal-box {
-
         padding: 38px 24px;
     }
 
 
     .modal-box h2 {
-
         font-size: 43px;
     }
 
 
-    .lyric {
+    .modal-box p {
+        font-size: 12px;
+    }
 
+
+    .lyric {
         font-size: 21px;
+    }
+
+
+    .final-signature {
+        font-size: 30px;
     }
 
 }
@@ -1327,12 +1274,17 @@ body {
 
 <body>
 
+
+<!-- =========================
+     OPENING
+========================= -->
+
 <div id="opening">
 
     <div class="opening-content">
 
         <div class="small-text">
-            A little surprise for you
+            a little surprise for you
         </div>
 
 
@@ -1358,18 +1310,22 @@ body {
 
 
         <div class="open-date">
-            August 29, 2026
+            august 29, 2026
         </div>
 
 
         <div class="tap-text">
-            TAP THE HEART
+            tap the heart
         </div>
 
     </div>
 
 </div>
 
+
+<!-- =========================
+     MAIN
+========================= -->
 
 <div id="main">
 
@@ -1379,34 +1335,36 @@ body {
     <section class="hero">
 
         <div class="hero-small">
-            A LITTLE PIECE OF MY HEART
+            a little piece of my heart
         </div>
 
 
         <h1>
-            For <span>Adi</span>
+            for <span>adi</span>
         </h1>
 
 
         <div class="hero-date">
-            August 29, 2026
+            august 29, 2026
         </div>
 
 
         <div class="hero-description">
 
-         You were someone I never expected to meet,
-yet somehow, you became someone I never want to lose.
+            you were someone i never expected to meet,
+            yet somehow, you became someone i never want to lose. ♡
 
         </div>
 
     </section>
 
 
+    <!-- PHOTOS -->
+
     <section class="photos-section">
 
         <div class="section-label">
-            OUR LITTLE MEMORIES
+            our little memories
         </div>
 
 
@@ -1422,11 +1380,10 @@ yet somehow, you became someone I never want to lose.
 
                 <img
                     src="photo1.jpg.jpg"
-                    alt="Our first memory"
+                    alt="our first memory"
                 >
 
             </div>
-
 
 
             <!-- PHOTO 2 -->
@@ -1438,11 +1395,13 @@ yet somehow, you became someone I never want to lose.
 
                 <img
                     src="photo2.jpg.jpg"
-                    alt="Our second memory"
+                    alt="our second memory"
                 >
 
             </div>
 
+
+            <!-- PHOTO 3 -->
 
             <div
                 class="photo-card photo-three"
@@ -1451,7 +1410,7 @@ yet somehow, you became someone I never want to lose.
 
                 <img
                     src="photo3.jpg.jpg"
-                    alt="Our third memory"
+                    alt="our third memory"
                 >
 
             </div>
@@ -1461,12 +1420,13 @@ yet somehow, you became someone I never want to lose.
 
 
         <div class="photo-instruction">
-            Tap a photo... ♡
+            tap a photo... ♡
         </div>
 
     </section>
 
 
+    <!-- MUSIC -->
 
     <section class="music-section">
 
@@ -1479,16 +1439,14 @@ yet somehow, you became someone I never want to lose.
 
 
         <div class="music-title">
-            Can't Help Falling in Love
+            can't help falling in love
         </div>
 
 
         <div class="music-subtitle">
-            OUR SONG
+            our song
         </div>
 
-
-       
 
         <audio
             id="music"
@@ -1507,42 +1465,42 @@ yet somehow, you became someone I never want to lose.
             class="music-button"
             id="musicButton"
         >
-            ▶ Play Our Song
+            ▶ play our song
         </button>
 
 
         <div class="lyrics">
 
             <div class="lyrics-label">
-                MUSIC & MEMORIES
+                music & memories
             </div>
 
-
-      
 
             <div class="lyric active">
-                ♡ Our song begins here...
+                ♡ our song begins here...
             </div>
 
 
             <div class="lyric">
-                Every note reminds me of you.
+                every note reminds me of you.
             </div>
 
 
             <div class="lyric">
-                Every memory feels like home.
+                every memory feels like home.
             </div>
 
 
             <div class="lyric">
-                Some things are simply meant to be.
+                some things are simply meant to be.
             </div>
 
         </div>
 
     </section>
 
+
+    <!-- FINAL -->
 
     <section class="final">
 
@@ -1552,21 +1510,21 @@ yet somehow, you became someone I never want to lose.
 
 
         <h2>
-            I Love You
+            i love you
         </h2>
 
 
         <p>
 
-          Thank you for always being there,
-for making me laugh, and for making my days
-so much better just by being you.
+            thank you for always being there,
+            for making me laugh, for listening to my random kwentos,
+            and for making my days so much better just by being you.
 
         </p>
 
 
         <div class="final-signature">
-            Forever & Always, Adi ♡
+            forever & always, adi ♡
         </div>
 
     </section>
@@ -1574,27 +1532,29 @@ so much better just by being you.
 </div>
 
 
-
+<!-- =========================
+     CHOICES
+========================= -->
 
 <div id="choices">
 
     <div class="choices-inner">
 
-
         <h2>
-            For My Adi
+            for my adi
         </h2>
 
 
         <p>
-            CHOOSE A LITTLE PIECE OF MY HEART
+            choose a little piece of my heart
         </p>
 
 
         <div class="choice-grid">
 
 
-          
+            <!-- LETTER -->
+
             <div
                 class="choice"
                 id="letterChoice"
@@ -1605,18 +1565,17 @@ so much better just by being you.
                 </div>
 
                 <h3>
-                    A Letter
+                    a letter
                 </h3>
 
                 <p>
-                    WORDS FROM MY HEART
+                    words from my heart
                 </p>
 
             </div>
 
 
-
-        
+            <!-- SONG -->
 
             <div
                 class="choice"
@@ -1628,15 +1587,14 @@ so much better just by being you.
                 </div>
 
                 <h3>
-                    Our Song
+                    our song
                 </h3>
 
                 <p>
-                    START THE MUSIC
+                    start the music
                 </p>
 
             </div>
-
 
 
             <!-- LOVE -->
@@ -1651,11 +1609,11 @@ so much better just by being you.
                 </div>
 
                 <h3>
-                    My Love
+                    my love
                 </h3>
 
                 <p>
-                    ONE MORE MESSAGE
+                    one more message
                 </p>
 
             </div>
@@ -1668,7 +1626,7 @@ so much better just by being you.
             class="close-choice"
             id="closeChoices"
         >
-            Close
+            close
         </button>
 
     </div>
@@ -1676,6 +1634,9 @@ so much better just by being you.
 </div>
 
 
+<!-- =========================
+     LETTER MODAL
+========================= -->
 
 <div
     class="modal"
@@ -1690,38 +1651,63 @@ so much better just by being you.
 
 
         <div class="modal-date">
-            August 29, 2026
+            august 29, 2026
         </div>
 
 
         <h2>
-            My Dear Adi
+            my dear adi
         </h2>
 
 
         <p>
-            I don't think words will ever be enough
+            i don't think words will ever be enough
             to explain how much you mean to me,
-            but I still want to try.
+            but i still want to try. 🥹
         </p>
 
 
         <p>
-           i just wanna say how genuinely thankful i am for you, like, super. 🥹
 
-thank you for always being there for me, for listening to all my random kwentos, for making me laugh, and for somehow knowing how to make my bad days a little less bad.
+            i just wanna say how genuinely thankful i am for you, like, super. 🥹
+            <br><br>
 
-honestly, hindi ko talaga in-expect na you’d become this important to me. like, excuse me??? paano ka naging favorite person ko??? 😭
+            thank you for always being there for me,
+            for listening to all my random kwentos,
+            for making me laugh, and for somehow making
+            even my worst days feel a little less bad.
+            <br><br>
 
-i’m so grateful for all the little moments we have together, kahit minsan super random lang, wala naman tayong ginagawa, or nag-aaway tayo over the most nonsense things ever. 😭 but somehow, i still wouldn’t trade those moments for anything.
+            honestly, hindi ko talaga in-expect na you’d become
+            this important to me.
+            like, excuse me??? paano ka naging favorite person ko??? 😭
+            <br><br>
 
-and yes, minsan you’re annoying. actually, most of the time. charot. 😭 but you’re also one of the best things that happened to me, and i hope you know how much i appreciate having you in my life.
+            i’m so grateful for all the little moments we have together,
+            kahit super random lang, kahit wala naman tayong ginagawa,
+            or kahit nag-aaway tayo over the most nonsense things ever. 😭
+            <br><br>
 
-so thank you, love, for being you and for loving me kahit ang arte ko minsan. 🤭
+            and yes, minsan you’re annoying.
+            actually, most of the time.
+            charot. 😭
+            <br><br>
 
-i’m really, really grateful that out of all the people in this world, i somehow got you.
+            but you’re also one of the best things that happened to me,
+            and i hope you know how much i appreciate having you in my life.
+            <br><br>
 
-and honestly? i wouldn’t have it any other way. 
+            thank you, love, for being you
+            and for loving me kahit ang arte ko minsan. 🤭
+            <br><br>
+
+            i’m really, really grateful that out of all the people
+            in this world, i somehow got you.
+            <br><br>
+
+            and honestly?
+            i wouldn’t have it any other way. 🤍
+
         </p>
 
 
@@ -1733,7 +1719,7 @@ and honestly? i wouldn’t have it any other way.
                 font-style:italic;
             "
         >
-            I love you, Adi. ♡
+            i love you, adi. ♡
         </p>
 
 
@@ -1741,13 +1727,17 @@ and honestly? i wouldn’t have it any other way.
             class="close-modal"
             data-close="letterModal"
         >
-            Close
+            close
         </button>
 
     </div>
 
 </div>
 
+
+<!-- =========================
+     SONG MODAL
+========================= -->
 
 <div
     class="modal"
@@ -1762,20 +1752,22 @@ and honestly? i wouldn’t have it any other way.
 
 
         <div class="modal-date">
-            August 29, 2026
+            august 29, 2026
         </div>
 
 
         <h2>
-            Our Song
+            our song
         </h2>
 
 
         <p>
-            This song is for the moments,
+
+            this song is for the moments,
             the memories,
             and the person who makes
-           my life meaningful.
+            my life a little more meaningful. 🤍
+
         </p>
 
 
@@ -1783,7 +1775,7 @@ and honestly? i wouldn’t have it any other way.
             class="music-button"
             id="modalMusicButton"
         >
-            ▶ Play Our Song
+            ▶ play our song
         </button>
 
 
@@ -1791,13 +1783,17 @@ and honestly? i wouldn’t have it any other way.
             class="close-modal"
             data-close="songModal"
         >
-            Close
+            close
         </button>
 
     </div>
 
 </div>
 
+
+<!-- =========================
+     LOVE MODAL
+========================= -->
 
 <div
     class="modal"
@@ -1812,24 +1808,30 @@ and honestly? i wouldn’t have it any other way.
 
 
         <div class="modal-date">
-            August 29, 2026
+            august 29, 2026
         </div>
 
 
         <h2>
-            My Love
+            my love
         </h2>
 
 
         <p>
-           if i could make one promise,
-it would be to always treasure what we have—
-every memory, every laugh, every little moment,
-and even the random, chaotic ones. 😭
 
-because at the end of the day,
-i’m just really grateful that i get to experience all of this with you.
-and honestly, i wouldn’t want it any other way
+            if i could make one promise,
+            it would be to always treasure what we have...
+            every memory, every laugh, every little moment,
+            and even the random, chaotic ones. 😭
+            <br><br>
+
+            because at the end of the day,
+            i’m just really grateful that i get to experience
+            all of this with you.
+            <br><br>
+
+            honestly, i wouldn’t want it any other way. 🤍
+
         </p>
 
 
@@ -1841,7 +1843,7 @@ and honestly, i wouldn’t want it any other way
                 font-style:italic;
             "
         >
-            I love you, Adi. 🪽♡
+            i love you, adi. 🪽♡
         </p>
 
 
@@ -1849,7 +1851,7 @@ and honestly, i wouldn’t want it any other way
             class="close-modal"
             data-close="loveModal"
         >
-            Close
+            close
         </button>
 
     </div>
@@ -1857,8 +1859,8 @@ and honestly, i wouldn’t want it any other way
 </div>
 
 
-
 <script>
+
 
 /* =========================
    ELEMENTS
@@ -1892,6 +1894,9 @@ const musicCircle =
     document.getElementById("musicCircle");
 
 
+/* =========================
+   OPEN HEART
+========================= */
 
 openHeart.addEventListener("click", () => {
 
@@ -1907,7 +1912,7 @@ openHeart.addEventListener("click", () => {
 
 
 /* =========================
-   THREE PHOTOS CLICKABLE
+   THREE PHOTOS
 ========================= */
 
 const photos = [
@@ -2022,10 +2027,10 @@ function startMusic() {
         .then(() => {
 
             musicButton.innerHTML =
-                "❚❚ Pause Our Song";
+                "❚❚ pause our song";
 
             modalMusicButton.innerHTML =
-                "❚❚ Pause Our Song";
+                "❚❚ pause our song";
 
             musicCircle.classList.add(
                 "playing"
@@ -2035,7 +2040,7 @@ function startMusic() {
         .catch(() => {
 
             alert(
-                "Tap the Play button to start the music ♡"
+                "tap the play button to start the music ♡"
             );
 
         });
@@ -2048,10 +2053,10 @@ function pauseMusic() {
     music.pause();
 
     musicButton.innerHTML =
-        "▶ Play Our Song";
+        "▶ play our song";
 
     modalMusicButton.innerHTML =
-        "▶ Play Our Song";
+        "▶ play our song";
 
     musicCircle.classList.remove(
         "playing"
@@ -2113,7 +2118,7 @@ document
 
 
 /* =========================
-   CLICK OUTSIDE
+   CLICK OUTSIDE MODAL
 ========================= */
 
 document
@@ -2171,7 +2176,7 @@ document.addEventListener(
 
 
 /* =========================
-   FLOATING ANGEL PARTICLES
+   FLOATING PARTICLES
 ========================= */
 
 function createParticle() {
@@ -2182,6 +2187,7 @@ function createParticle() {
     particle.className =
         "particle";
 
+
     const symbols = [
         "♡",
         "✦",
@@ -2189,6 +2195,7 @@ function createParticle() {
         "·",
         "🪽"
     ];
+
 
     particle.innerHTML =
         symbols[
@@ -2198,21 +2205,27 @@ function createParticle() {
             )
         ];
 
+
     particle.style.left =
         Math.random() * 100 + "vw";
+
 
     particle.style.fontSize =
         8 + Math.random() * 14 + "px";
 
+
     const duration =
         7 + Math.random() * 8;
+
 
     particle.style.animationDuration =
         duration + "s";
 
+
     document.body.appendChild(
         particle
     );
+
 
     setTimeout(() => {
 
@@ -2228,9 +2241,30 @@ setInterval(
     700
 );
 
+
+/* =========================
+   SIMPLE LYRIC ROTATION
+========================= */
+
+const lyrics =
+    document.querySelectorAll(".lyric");
+
+let lyricIndex = 0;
+
+
+setInterval(() => {
+
+    lyrics[lyricIndex].classList.remove("active");
+
+    lyricIndex =
+        (lyricIndex + 1) % lyrics.length;
+
+    lyrics[lyricIndex].classList.add("active");
+
+}, 4000);
+
+
 </script>
 
 </body>
 </html>
-```
-
